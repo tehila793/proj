@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="547b1f7a3aa84a3da4502233319928a4" Name="Diagram1">
+        <EntityTypeShape EntityType="WeddingModel.Address" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WeddingModel.Area" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WeddingModel.Categories" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="WeddingModel.Customers" Width="1.5" PointX="6" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WeddingModel.Halls" Width="1.5" PointX="8.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WeddingModel.HallType" Width="1.5" PointX="6" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WeddingModel.Img" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WeddingModel.Opinion" Width="1.5" PointX="3" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WeddingModel.ProductsToCustomers" Width="1.5" PointX="8.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WeddingModel.Service" Width="1.5" PointX="3.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WeddingModel.Status" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WeddingModel.Suppliers" Width="1.5" PointX="6" PointY="6.5" IsExpanded="true" />
+        <AssociationConnector Association="WeddingModel.FK__Address__idArea__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="WeddingModel.FK__Address__idCateg__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="WeddingModel.FK__Halls__idAddress__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="WeddingModel.FK__Suppliers__idAdd__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="WeddingModel.FK__Halls__idCategor__619B8048" ManuallyRouted="false" />
+        <AssociationConnector Association="WeddingModel.FK__Img__idCategory__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="WeddingModel.FK__Opinion__idCateg__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="WeddingModel.FK__Suppliers__idCat__6754599E" ManuallyRouted="false" />
+        <AssociationConnector Association="WeddingModel.FK__ProductsT__idCus__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="WeddingModel.FK__Halls__idOpinion__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="WeddingModel.FK__Halls__idtype__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="WeddingModel.FK__ProductsT__idSup__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="WeddingModel.FK__Suppliers__idser__693CA210" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

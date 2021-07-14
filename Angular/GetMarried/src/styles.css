@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; font-family:'Calibri Light' !important; }
+body {direction: rtl; }
+app-root{
+  font-family:'Calibri Light' !important;
+}
+h1{
+        color:rgba(105,72,52,1);
+        text-align: center;
+      font-size: larger;
+      }
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";

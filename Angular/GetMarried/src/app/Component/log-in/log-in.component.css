@@ -1,0 +1,48 @@
+.login-signup{
+    width: 27%;
+    float: right;
+    margin: 11%;
+   
+}
+h1{
+  font-size: xx-large;
+  font-weight: bold;
+  font-family:'Calibri Light' !important;
+}
+.invalid-feedback
+{
+  color:red;
+}
+.container > * {
+    width: 90%;
+    margin-right: 4%;
+    font-size: 20px;
+    text-align: right;
+    font-family:'Calibri Light' !important;
+  }
+
+  .input-password{
+    width:80%;
+  }
+  .mat-icon-button{
+     background-color: rgb(255, 255, 255);
+     font-family: 'Material Icons';
+ margin-right: none;
+     border: none;
+  }
+
+button{
+  margin-right: 39%;
+  width: 21%;
+  font-size: 19px;
+  height: 45px;
+  background-color: rgb(184, 154, 125);
+  border-radius: 10px;
+}
+
+mat-label{
+    color:rgb(0, 0, 0);
+   
+  }
+ 
+  

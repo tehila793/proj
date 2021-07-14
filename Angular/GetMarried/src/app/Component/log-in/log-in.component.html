@@ -1,0 +1,70 @@
+<form  #login="ngForm" [formGroup]="myGroup">
+<div class="login-signup">
+     <h1>התחברות</h1> 
+    <div class="container">
+        <mat-form-field>
+            <mat-label>דואר אלקטרוני</mat-label>
+            <input matInput  formControlName="emaillogin" required>
+            <mat-error *ngIf="myGroup.controls.emaillogin.value.invalid">{{getErrorMessageLogin()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>הכנס סיסמא</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide">
+                <mat-icon class="material-icons"> {{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+    </div>
+    <button mat-button>כניסה</button>
+</div>  
+</form>
+<!-- 
+ <form class="login-signup" #signup="ngForm">
+    <h1>הרשמה</h1>
+    <div class="container">
+        <mat-form-field>
+            <mat-label>שם</mat-label>
+            <input matInput>
+        </mat-form-field>
+
+         <mat-form-field appearance="fill">
+            <mat-label>מספר פלאפון</mat-label>
+            <example-tel-input formControlName="tel" required></example-tel-input>
+            <mat-icon matSuffix>phone</mat-icon>
+           
+          </mat-form-field> 
+
+        <mat-form-field>
+            <mat-label>סיסמא</mat-label>
+            <input matInput [(ngModel)]="pass2" [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide">
+                <mat-icon class="material-icons"> {{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+        
+
+        <mat-form-field>
+            <mat-label>אימות סיסמא</mat-label>
+            <input matInput [(ngModel)]="pass2" [type]="hide ? 'password' : 'text'">
+            <div>{{pass2}}</div>
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide">
+                <mat-icon class="material-icons"> {{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>דואר אלקטרוני</mat-label>
+            <input matInput placeholder="אי-מייל"  formControlName="email" required>
+            <mat-error *ngIf="myGroup.controls.email.value.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+    </div>
+    <button mat-button type="submit" 
+
+    >כניסה</button>
+     [disabled]="!form1.form.valid"  -->
+<!-- </form> -->
+ 
